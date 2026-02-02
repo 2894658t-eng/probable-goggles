@@ -7,8 +7,9 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const supabaseUrl = "PUT_YOUR_SUPABASE_URL_HERE";
-const supabaseKey = "PUT_YOUR_SUPABASE_ANON_KEY_HERE";
+const supabaseUrl = "https://nqjbunpvlkvpkhlnvdko.supabase.co";
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5xamJ1bnB2bGt2cGtobG52ZGtvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njk5ODcyNjcsImV4cCI6MjA4NTU2MzI2N30.rrR1FfAFRdXd7fuE4Z80KOyFTWQy76wavW0ONHNYGwM";
+
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 app.get("/", (req, res) => {
